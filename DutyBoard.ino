@@ -1,9 +1,4 @@
-/************************
- * Automatic Duty Board *
- *                      *
- * Zach Cross           *
- * Sept 2014            *
- ************************/
+// Date and time functions using a DS1307 RTC connected via I2C and Wire lib
  
 // DEFINES
 #define HEARTBEAT_LED 13
@@ -25,7 +20,8 @@
 RTC_DS1307 RTC;
 
 // GLOBAL VARIABLES
-const char duty_calendar[] = { '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', 'B', 'B', 'Z', 'B', 'N', 'A', 'L', 'G', 'G', 'Z', 'B', 'N', '-' };
+const char duty_calendar[] = { '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-' };
+//                              0    1    2    3    4    5    6    7    8    9    10   11   12   13   14   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29   30   31
 
 void setup () {
   
@@ -49,8 +45,8 @@ void setup () {
   if (! RTC.isrunning()) {
     Serial.println("RTC is NOT running!");
     // following line sets the RTC to the date & time this sketch was compiled
-    RTC.adjust(DateTime(__DATE__, (__TIME__)));
-    Serial.println("RTC SET");
+    //RTC.adjust(DateTime(__DATE__, (__TIME__)));
+    //Serial.println("RTC SET");
   }
 
   // Serial Init
