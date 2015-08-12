@@ -1,7 +1,7 @@
 DutyBoard
 =========
 
-Arduino w/ RTC based solution to automatically update (via LED indicators) which Resident Assistant (RA) is on duty each night.
+Arduino w/ RTC based solution to automatically updateat (via LED indicators) which Resident Assistant (RA) is on duty each night.
 
 
 Known Issue(s):
