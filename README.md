@@ -16,7 +16,7 @@ Known Issues
 Repository Contents
 -------------------
 
-* **/Hardware** - Duty Board Arduino Code & RTC Library
+* **/Software** - Duty Board Arduino Code & RTC Library
 * **/Images** - Images of the Duty Board in action!
 
 License
